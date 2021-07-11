@@ -3,13 +3,13 @@ package grpc
 import (
 	"bytes"
 	"context"
-	"github.com/golang/protobuf/proto"
-	"github.com/paintmeyellow/tron-demo/api"
-	"github.com/paintmeyellow/tron-demo/common/crypto"
-	"github.com/paintmeyellow/tron-demo/common/hexutil"
-	"github.com/paintmeyellow/tron-demo/core"
+	"github.com/paintmeyellow/gotron/pkg/common/crypto"
+	"github.com/paintmeyellow/gotron/pkg/common/hexutil"
+	"github.com/paintmeyellow/gotron/pkg/proto/api"
+	"github.com/paintmeyellow/gotron/pkg/proto/core"
 	"github.com/pkg/errors"
 	"golang.org/x/sync/errgroup"
+	"google.golang.org/protobuf/proto"
 	"time"
 )
 

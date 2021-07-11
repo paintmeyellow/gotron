@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"context"
 	"errors"
-	"github.com/paintmeyellow/tron-demo/common/base58"
-	"github.com/paintmeyellow/tron-demo/core"
+	"github.com/paintmeyellow/gotron/pkg/common/base58"
+	"github.com/paintmeyellow/gotron/pkg/proto/core"
 )
 
 var ErrAccountNotFound = errors.New("account not found")

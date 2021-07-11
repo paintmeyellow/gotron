@@ -1,11 +1,10 @@
-module github.com/paintmeyellow/tron-demo
+module github.com/paintmeyellow/gotron
 
 go 1.16
 
 require (
 	github.com/btcsuite/btcd v0.22.0-beta // indirect
 	github.com/ethereum/go-ethereum v1.10.4
-	github.com/golang/protobuf v1.5.2
 	github.com/pkg/errors v0.9.1
 	github.com/shengdoushi/base58 v1.0.0
 	golang.org/x/crypto v0.0.0-20210616213533-5ff15b29337e // indirect

@@ -3,11 +3,12 @@ package account
 import (
 	"crypto/ecdsa"
 	"encoding/hex"
-	"github.com/paintmeyellow/tron-demo/pkg/common/base58"
+	"github.com/paintmeyellow/gotron/pkg/common/base58"
+	"github.com/paintmeyellow/gotron/pkg/common/crypto"
 	"github.com/pkg/errors"
 )
 
-var ErrAssertType = errors.New("cannot assert type")
+var ErrCreatePublicKey = errors.New("cannot create public key")
 
 type Account struct {
 	Address    string
@@ -23,7 +24,7 @@ func Create() (*Account, error) {
 	publicKey := privateKey.Public()
 	publicKeyECDSA, ok := publicKey.(*ecdsa.PublicKey)
 	if !ok {
-		return nil, errors.Wrap(ErrAssertType, "publicKey is not of type *ecdsa.PublicKey")
+		return nil, ErrCreatePublicKey
 	}
 
 	addresBytes := crypto.PubkeyToAddress(*publicKeyECDSA).Bytes()

@@ -1,7 +1,7 @@
 package grpc
 
 import (
-	"github.com/paintmeyellow/tron-demo/api"
+	"github.com/paintmeyellow/gotron/pkg/proto/api"
 	"google.golang.org/grpc"
 )
 

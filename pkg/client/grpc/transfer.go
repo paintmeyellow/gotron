@@ -3,9 +3,9 @@ package grpc
 import (
 	"context"
 	"crypto/ecdsa"
-	"github.com/paintmeyellow/tron-demo/common/crypto"
-	"github.com/paintmeyellow/tron-demo/common/types"
-	"github.com/paintmeyellow/tron-demo/core"
+	"github.com/paintmeyellow/gotron/pkg/common/crypto"
+	"github.com/paintmeyellow/gotron/pkg/common/types"
+	"github.com/paintmeyellow/gotron/pkg/proto/core"
 	"github.com/pkg/errors"
 )
 

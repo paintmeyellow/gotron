@@ -1,7 +1,7 @@
 package rest
 
 import (
-	"github.com/paintmeyellow/tron-demo/trongrid"
+	"github.com/paintmeyellow/gotron/pkg/trongrid"
 	"net/url"
 )
 

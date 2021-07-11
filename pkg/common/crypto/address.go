@@ -3,8 +3,8 @@ package crypto
 import (
 	"crypto/ecdsa"
 	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/paintmeyellow/tron-demo/common/base58"
-	"github.com/paintmeyellow/tron-demo/common/hexutil"
+	"github.com/paintmeyellow/gotron/pkg/common/base58"
+	"github.com/paintmeyellow/gotron/pkg/common/hexutil"
 	"math/big"
 )
 

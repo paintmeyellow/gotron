@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"crypto/ecdsa"
 	"errors"
-	"github.com/paintmeyellow/tron-demo/common/crypto"
+	"github.com/paintmeyellow/gotron/pkg/common/crypto"
 	"testing"
 )
 

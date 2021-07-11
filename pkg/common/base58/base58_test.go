@@ -1,7 +1,7 @@
 package base58
 
 import (
-	"github.com/paintmeyellow/tron-demo/common/hexutil"
+	"github.com/paintmeyellow/gotron/pkg/common/hexutil"
 	"strings"
 	"testing"
 )

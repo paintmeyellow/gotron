@@ -2,7 +2,7 @@ package rest
 
 import (
 	"context"
-	"github.com/paintmeyellow/tron-demo/trongrid"
+	"github.com/paintmeyellow/gotron/pkg/trongrid"
 	"golang.org/x/sync/errgroup"
 	"sync"
 )

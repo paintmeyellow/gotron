@@ -1,6 +1,6 @@
 package crypto
 
-import "github.com/paintmeyellow/tron-demo/common/hexutil"
+import "github.com/paintmeyellow/gotron/pkg/common/hexutil"
 
 const (
 	// HashLength is the expected length of the hash

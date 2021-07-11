@@ -4,8 +4,8 @@ import (
 	"crypto/ecdsa"
 	"crypto/sha256"
 	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/golang/protobuf/proto"
-	"github.com/paintmeyellow/tron-demo/api"
+	"github.com/paintmeyellow/gotron/pkg/proto/api"
+	"google.golang.org/protobuf/proto"
 	"time"
 )
 
