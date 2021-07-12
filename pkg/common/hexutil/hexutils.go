@@ -2,19 +2,12 @@ package hexutil
 
 import (
 	"encoding/hex"
+	"github.com/pkg/errors"
 )
 
 var (
-	EmptyString = &hexError{"empty hex string"}
+	ErrEmptyString = errors.New("empty hex string")
 )
-
-type hexError struct {
-	msg string
-}
-
-func (h *hexError) Error() string {
-	return h.msg
-}
 
 // Encode encodes bytes as a hex string.
 func Encode(bytes []byte) string {
@@ -26,7 +19,7 @@ func Encode(bytes []byte) string {
 // Decode hex string as bytes
 func Decode(input string) ([]byte, error) {
 	if len(input) == 0 {
-		return nil, EmptyString
+		return nil, ErrEmptyString
 	}
 	return hex.DecodeString(input[:])
 }

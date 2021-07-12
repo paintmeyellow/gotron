@@ -33,7 +33,7 @@ func (c *Client) Transfer(ctx context.Context, sendTxn SendableTransaction) (*cr
 		return nil, ErrInvalidTransactionResult
 	}
 
-	txnId, err := types.SignTxn(txn, &sendTxn.OwnerKey)
+	txnId, err := types.SignTxn(txn.GetTransaction(), &sendTxn.OwnerKey)
 	if err != nil {
 		return nil, err
 	}
