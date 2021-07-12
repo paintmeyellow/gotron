@@ -33,7 +33,8 @@ func (c *Client) Transfer(ctx context.Context, sendTxn SendableTransaction) (*cr
 		return nil, ErrInvalidTransactionResult
 	}
 
-	if err = types.SignTxn(txn, &sendTxn.OwnerKey); err != nil {
+	txnId, err := types.SignTxn(txn, &sendTxn.OwnerKey)
+	if err != nil {
 		return nil, err
 	}
 
@@ -43,7 +44,7 @@ func (c *Client) Transfer(ctx context.Context, sendTxn SendableTransaction) (*cr
 	}
 
 	var hash crypto.Hash
-	hash.SetBytes(txn.GetTxid())
+	hash.SetBytes(txnId)
 
 	return &hash, nil
 }
