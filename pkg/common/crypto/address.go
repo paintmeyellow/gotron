@@ -25,10 +25,6 @@ func (a *Address) Hex() string {
 	return hexutil.Bytes2Hex(a[:])
 }
 
-func (a *Address) Valid() bool {
-	return len(a.Bytes()) == AddressLength
-}
-
 // String implements fmt.Stringer.
 func (a Address) String() string {
 	if a[0] == 0 {

@@ -17,9 +17,6 @@ func TestCreate(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	if !addr.Valid() {
-		t.Fatal(err)
-	}
 	if ok, err := isAddresForPrivateKey(addr, acc.PrivateKey); err != nil || !ok {
 		t.Fatalf("result:%t, error:%v", ok, err)
 	}
